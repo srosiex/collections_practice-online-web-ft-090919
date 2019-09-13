@@ -36,5 +36,38 @@ array = [3, 4, 9, 2]
 reverse_array(array)
 
 def kesha_maker(array)
-
+  array.each do |element|
+    element[2] = "$"
+    element
+  end
 end
+
+array = ["blake", "ashley", "scott"]
+kesha_maker(array)
+
+def find_a(array)
+array.select  { |i| i[0] == "a" }
+end
+
+array = ["apple", "orange", "pear", "avis", "arlo", "ascot"]
+find_a(array)
+
+def sum_array(array)
+  array.inject do |sum, num|
+    sum + num
+  end
+end
+array = [1,2,3]
+sum_array(array)
+
+def add_s(array)
+array.collect.each_with_index do |word, index|
+  if index == 1
+    word
+  else
+    word + "s"
+  end
+end
+end
+array= ["hand","feet", "knee", "table"]
+add_s(array)
