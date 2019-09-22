@@ -15,6 +15,7 @@ end
 end
 array = [1,4,5,6,3]
 sort_array_desc(array)
+<<<<<<< HEAD
 
 def sort_array_char_count(array)
 array.sort_by {|obj| obj.size}
@@ -71,3 +72,5 @@ end
 end
 array= ["hand","feet", "knee", "table"]
 add_s(array)
+=======
+>>>>>>> 178edb01128fc679e9a9b4a305d38d65c659b3a0
